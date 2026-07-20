@@ -1,0 +1,16 @@
+{
+  "name": "randomcolorgeneratorui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tsgo": "tsgo"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@typescript/native-preview": "^7.0.0-dev.20260707.2"
+  }
+}
