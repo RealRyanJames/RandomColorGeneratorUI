@@ -6,8 +6,8 @@ const getRGB = (color: string) => {
   return Math.floor(Math.random() * Number(color) + 1);
 };
 
-const Convert = (color: Color) => {
-  return parseInt(String(color.color), 16);
+const Convert = (color: Color | number) => {
+  return parseInt(String(color), 16);
 };
 
 function getColorPadding(color: number) {
@@ -28,7 +28,7 @@ function clickButtonColor() {
   bTarget.textContent = "B: " + b;
 
   const hexTarget = document.getElementById("hexCode") as HTMLElement;
-  hexTarget.textContent = `#${getColorPadding(r)}${getColorPadding(g)}${getColorPadding(b)}`;
+  hexTarget.textContent = `#${r.toString(16)}${g.toString(16)}${b.toString(16).padEnd(1, "0")}`;
 }
 
 const button = document.getElementById("button") as HTMLButtonElement;

@@ -33,7 +33,22 @@ div {
   top: calc(60px * 5);
 }
 
+h2,
+h1 {
+  font-size: 28px;
+}
+
 .container {
   display: flex;
   justify-content: space-around;
+}
+
+button {
+  padding: 12px;
+  width: calc(120px * 2 / 0.9);
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background-color: rgb(12, 23, 43);
+  color: white;
 }
